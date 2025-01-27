@@ -1,0 +1,67 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: My blog
+email: 17034517+waldo121@users.noreply.github.com
+description: >- # this means to ignore newlines until "baseurl:"
+  My blog about random topics
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://waldo121.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  waldo121
+repository: waldo121/waldo121.github.io
+name: Raphael Bouchard
+author:
+  name: "Raphael Bouchard"
+  location: "Montreal, Canada"
+  bio: "B. Software eng, Devops enthousiast, Traveller"
+  links:
+    - label: Github
+      icon: "fab fa-fw fa-github"
+      url: "https:github.com/waldo121"
+    - label: Linkedin
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rapha%C3%ABl-b-962714a2/"
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+paginate: 5
+paginate_path: /page:num/
+remote_theme: mmistakes/minimal-mistakes@93022d6432f277eb5d83677fa50e4120f1281b04
+minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+locale: en-CA
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
