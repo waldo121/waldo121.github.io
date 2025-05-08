@@ -16,7 +16,7 @@
 title: Raphael's site
 email: 17034517+waldo121@users.noreply.github.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My blog about random topics
+  My personal website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://waldo121.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  waldo121
@@ -44,7 +44,7 @@ paginate_path: /page:num/
 remote_theme: mmistakes/minimal-mistakes@93022d6432f277eb5d83677fa50e4120f1281b04
 minimal_mistakes_skin: "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 locale: en-CA
-
+include: ["_pages"]
 defaults:
   # _posts
   - scope:
@@ -53,6 +53,13 @@ defaults:
     values:
       show_date: true
       read_time: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
